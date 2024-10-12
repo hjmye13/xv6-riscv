@@ -44,3 +44,10 @@ You will need a RISC-V "newlib" tool chain from
 https://github.com/riscv/riscv-gnu-toolchain, and qemu compiled for
 riscv64-softmmu.  Once they are installed, and in your shell
 search path, you can run "make qemu".
+
+
+qemu:
+export PATH=/home/user/project/scr1/sc-dt-2023.11/sc-dt/tools/bin:$PATH
+
+gcc:
+export PATH=$PATH:/home/user/code/nuclei/gcc/bin

@@ -91,7 +91,7 @@ $U/initcode: $U/initcode.S
 	$(OBJCOPY) -S -O binary $U/initcode.out $U/initcode
 	$(OBJDUMP) -S $U/initcode.o > $U/initcode.asm
 
-tags: $(OBJS) _init
+tags: $(OBJS) $U/_init
 	etags *.S *.c
 
 ULIB = $U/ulib.o $U/usys.o $U/printf.o $U/umalloc.o
@@ -139,6 +139,7 @@ UPROGS=\
 	$U/_grind\
 	$U/_wc\
 	$U/_zombie\
+	$U/_hjmtest\
 
 fs.img: mkfs/mkfs README $(UPROGS)
 	mkfs/mkfs fs.img README $(UPROGS)
