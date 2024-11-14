@@ -52,3 +52,5 @@ export PATH=/home/user/project/scr1/sc-dt-2023.11/sc-dt/tools/bin:$PATH
 gcc:
 export PATH=$PATH:/home/user/code/nuclei/gcc/bin
 export PATH=$PATH:/home/user/project/win2030/win2030/buildroot/dl/toolchain_toolsuite-1.0.7/bin
+
+111
