@@ -70,6 +70,13 @@ def test_find_recursive():
             './%s/%s/%s' % (dirs[0], dirs[1], needle),
             './%s/%s' % (dirs[2], needle))
 
+@test(14, "sysinfotest")
+def test_sysinfotest():
+    r.run_qemu(shell_script([
+        'sysinfotest'
+    ]))
+    r.match('^sysinfotest: OK', no=[".* FAIL .*"])
+
 @test(19, "xargs")
 def test_xargs():
     r.run_qemu(shell_script([

@@ -143,6 +143,7 @@ UPROGS=\
 	$U/_sleep\
 	$U/_hjmpingpong\
 	$U/_trace\
+	$U/_sysinfotest\
 
 fs.img: mkfs/mkfs README $(UPROGS)
 	mkfs/mkfs fs.img README $(UPROGS)
