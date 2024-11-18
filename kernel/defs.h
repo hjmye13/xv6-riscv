@@ -175,6 +175,8 @@ int             copyout(pagetable_t, uint64, char *, uint64);
 int             copyin(pagetable_t, char *, uint64, uint64);
 int             copyinstr(pagetable_t, char *, uint64, uint64);
 void            vmprint(pagetable_t pagetable);
+pagetable_t     proc_kpt_init(void); // 用于内核页表的初始化
+void            proc_inithart(pagetable_t kpt);
 
 // plic.c
 void            plicinit(void);
